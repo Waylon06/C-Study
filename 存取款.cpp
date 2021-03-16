@@ -14,6 +14,7 @@ int main()
 		printf("\t\t\t\t\t|\t2:取钱\t\t\t|\n");
 		printf("\t\t\t\t\t|\t0:退出\t\t\t|\n");
 		printf("\t\t\t\t\t|-------------------------------|\n");
+		printf("请选择您所需要选择的业务(0-2)\n");
 		scanf("%d",&a);
 		switch(a)
 		{
