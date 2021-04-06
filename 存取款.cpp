@@ -1,7 +1,8 @@
 #include<stdio.h>
 #include<windows.h>
 void save();							/*存钱函数*/
-void draw();					/*取钱函数*/
+void draw();
+void yue();					/*取钱函数*/
 double count,balance=0;							/*全局变量，表示账户余额*/
 /******************************主函数*****************************/
 int main()
@@ -12,14 +13,16 @@ int main()
 		printf("\t\t\t\t\t|--------存钱取钱程序菜单-------|\n");
 		printf("\t\t\t\t\t|\t1:存钱\t\t\t|\n");
 		printf("\t\t\t\t\t|\t2:取钱\t\t\t|\n");
+		printf("\t\t\t\t\t|\t3:余额查询\t|\n"); 
 		printf("\t\t\t\t\t|\t0:退出\t\t\t|\n");
 		printf("\t\t\t\t\t|-------------------------------|\n");
-		printf("请选择您所需要选择的业务(0-2)\n");
+		printf("请选择您所需要选择的业务(0-3)\n");
 		scanf("%d",&a);
 		switch(a)
 		{
 			case 1:save();break;
 			case 2:draw();break;
+			case 3:yue();break;
 			case 0:printf("服务关闭");
 			    return 0;
 			    break; 
@@ -51,6 +54,13 @@ void draw()
 	printf("请输入取款金额：");
 	scanf("%lf",&count);
 	balance-=count;
+	printf("您的余额为：%.2lf\n",balance);
+	system("pause");
+	system("cls");
+}
+void yue()
+{
+	printf("************************余额查询程序************************\n");
 	printf("您的余额为：%.2lf\n",balance);
 	system("pause");
 	system("cls");
