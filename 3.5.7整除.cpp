@@ -2,24 +2,24 @@
 int main()
 {
 	int a,x,y,z;
-	printf("请输入整数a的值：");
+	printf("锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷a锟斤拷值锟斤拷");
 	scanf("%d",&a);
 	x=a%3;
 	y=a%5;
 	z=a%7;
 	if(x==0&&y==0&&z==0)
-	printf("a能被3,5,7整除");
+	printf("a锟杰憋拷3,5,7锟斤拷锟斤拷");
 	else if(x==0&&y==0)
-	printf("a能被3,5整除");
+	printf("a锟杰憋拷3,5锟斤拷锟斤拷");
 	else if(x==0&&z==0)
-	printf("a能被3,7整除");
+	printf("a锟杰憋拷3,7锟斤拷锟斤拷");
 	else if(y==0&&z==0)
-	printf("a能被5,7整除");
+	printf("a锟杰憋拷5,7锟斤拷锟斤拷");
 	else if(x==0)
-	printf("a能被3整除");
+	printf("a锟杰憋拷3锟斤拷锟斤拷");
 	else if(y==0)
-	printf("a能被5整除");
+	printf("a锟杰憋拷5锟斤拷锟斤拷");
 	else if(z==0)
-	printf("a能被7整除");
+	printf("a锟杰憋拷7锟斤拷锟斤拷");
 	return 0; 
 }
